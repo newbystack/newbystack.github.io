@@ -3,46 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Newby Stack | Enterprise Systems Architecture & Automation</title>
+  <title>Newby Stack | Enterprise Systems Architecture & Integration</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav class="container">
-      <div class="logo">NEWBY<span>STACK</span></div>
+
+  <!-- Screen Reader Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <nav class="container" aria-label="Main Navigation">
+      <a href="index.html" class="logo" aria-label="Newby Stack Home">NEWBY<span>STACK</span></a>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="blog.html">Insights & Blog</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero container">
-    <h1>Enterprise Architecture. <br><span>Holistic Workflow Automation.</span></h1>
-    <p>Principal Operations & Business Systems Analyst with over 20 years driving enterprise tooling strategy, cross-platform integrations, and single-source-of-truth analytics across Healthcare, Higher Ed, and SaaS.</p>
-    <div class="cta-buttons">
-      <a href="experience.html" class="btn primary">View Systems Experience</a>
-      <a href="blog.html" class="btn secondary">Read Technical Insights</a>
-    </div>
-  </section>
+  <main id="main-content" role="main">
+    
+    <!-- Hero Section with Brand Color Gradient -->
+    <section class="hero container" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Enterprise Systems Architecture. <br><span>Holistic Workflow Automation.</span></h1>
+      <p>Principal Operations & Business Systems Analyst with over 20 years driving enterprise tooling strategy, cross-platform integrations, and single-source-of-truth analytics across Healthcare, Higher Education, and SaaS environments[cite: 1, 9].</p>
+      
+      <div class="cta-group">
+        <a href="experience.html" class="btn btn-primary">View Systems Experience</a>
+        <a href="blog.html" class="btn btn-secondary">Read Technical Insights</a>
+      </div>
+    </section>
 
-  <section class="competencies container">
-    <h2>Core Competencies</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Tooling Administration & Architecture</h3>
-        <p>Oracle HCM Cloud, PeopleSoft, Salesforce, Workday, Fit-Gap Analysis, and Business Process Mapping.</p>
+    <!-- Core Competencies Grid -->
+    <section class="container" aria-labelledby="competencies-heading">
+      <h2 id="competencies-heading" class="section-title">Core Architecture Competencies</h2>
+      
+      <div class="grid">
+        <article class="card">
+          <h3>Tooling Administration & Architecture</h3>
+          <p>Oracle HCM Cloud, PeopleSoft, Salesforce, Workday, Fit-Gap Analysis, and Business Process Mapping (Current/Future State)[cite: 1, 9].</p>
+        </article>
+
+        <article class="card">
+          <h3>BI & Data Engineering</h3>
+          <p>Advanced SQL, TOAD, Power Query ETL, DAX Data Modeling, Schema Analysis, and Single-Source-of-Truth Validation[cite: 1, 3, 6].</p>
+        </article>
+
+        <article class="card">
+          <h3>Workflow Automation & Integration</h3>
+          <p>Cross-Platform Data Flows, Microsoft Power Automate, VBA Macros, and Process Re-engineering[cite: 1, 3, 6].</p>
+        </article>
       </div>
-      <div class="card">
-        <h3>BI & Data Engineering</h3>
-        <p>Advanced SQL, TOAD, Power Query ETL, DAX Data Modeling, and Single-Source-of-Truth Validation.</p>
-      </div>
-      <div class="card">
-        <h3>Workflow Automation & Integration</h3>
-        <p>Cross-Platform Data Flows, Microsoft Power Automate, VBA Macros, and Process Re-engineering.</p>
-      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Newby Stack. All rights reserved. Built with accessibility and performance standards.</p>
     </div>
-  </section>
+  </footer>
+
 </body>
 </html>

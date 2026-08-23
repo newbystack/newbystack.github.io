@@ -2,18 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Insights & Articles | Newby Stack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights & Technical Blog | Newby Stack</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Include Header Navigation -->
-  <section class="container" style="padding-top: 50px;">
-    <h1>Technical Insights & Thought Leadership</h1>
-    <p>Articles on Enterprise Workflows, SQL Optimization, Power Automate, and AI Analytics.</p>
 
-    <!-- Embedded Blog Widget (e.g., BlogHandy or Hashnode Feed) -->
-    <div id="bh-posts"></div>
-    <script src="https://www.bloghandy.com/api/bh.js?appid=YOUR_BLOG_APP_ID" async></script>
-  </section>
+  <!-- Screen Reader Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <nav class="container" aria-label="Main Navigation">
+      <a href="index.html" class="logo" aria-label="Newby Stack Home">NEWBY<span>STACK</span></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="blog.html" class="active" aria-current="page">Insights & Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <section class="hero container" aria-labelledby="blog-heading">
+      <h1 id="blog-heading">Systems Insights & <span>Architecture</span></h1>
+      <p>Perspectives on enterprise tooling, workflow automation, post-merger systems integration, and single-source-of-truth data strategy[cite: 1, 9].</p>
+    </section>
+
+    <section class="container" aria-labelledby="articles-heading">
+      <h2 id="articles-heading" class="section-title">Latest Articles</h2>
+
+      <div style="display: flex; flex-direction: column; gap: 24px; margin-bottom: 60px;">
+
+        <!-- Article 1 -->
+        <article class="card">
+          <div class="card-header">
+            <h3>Harmonizing Disparate Tech Stacks During M&A Initiatives</h3>
+            <span class="company-tag">Systems Strategy</span>
+          </div>
+          <div class="tech-subtext">Published August 2026 • 5 min read</div>
+          <p>Post-merger integration often breaks down when legacy systems are forced together without unified data flow mapping[cite: 1]. Learn how establishing single-source-of-truth schemas and DAX metrics early prevents data loss and preserves institutional knowledge[cite: 1, 3].</p>
+          <a href="#" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 16px; margin-top: 10px;">Read Article <span class="sr-only">about Harmonizing Disparate Tech Stacks</span></a>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="card">
+          <div class="card-header">
+            <h3>Bridging the Gap Between Oracle HCM Cloud and PeopleSoft</h3>
+            <span class="company-tag">ERP Architecture</span>
+          </div>
+          <div class="tech-subtext">Published July 2026 • 7 min read</div>
+          <p>Navigating hybrid enterprise environments requires robust ETL pipelines[cite: 1]. Explore practical strategies using Power Query and custom VBA macros to automate data validation between Oracle HCM and PeopleSoft systems[cite: 1].</p>
+          <a href="#" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 16px; margin-top: 10px;">Read Article <span class="sr-only">about Bridging the Gap Between Oracle HCM Cloud and PeopleSoft</span></a>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="card">
+          <div class="card-header">
+            <h3>Why Every Enterprise Systems Rollout Needs Fit-Gap Mapping</h3>
+            <span class="company-tag">Business Analysis</span>
+          </div>
+          <div class="tech-subtext">Published June 2026 • 4 min read</div>
+          <p>Before executing UAT or regression testing, conducting structured fit-gap analyses across cross-functional divisions is essential for software adoption success[cite: 1].</p>
+          <a href="#" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 16px; margin-top: 10px;">Read Article <span class="sr-only">about Why Every Enterprise Systems Rollout Needs Fit-Gap Mapping</span></a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Newby Stack. All rights reserved. Built with accessibility and performance standards.</p>
+    </div>
+  </footer>
+
 </body>
 </html>

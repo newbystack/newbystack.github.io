@@ -7,119 +7,135 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav class="container">
-      <div class="logo">NEWBY<span>STACK</span></div>
+
+  <!-- Screen Reader Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <nav class="container" aria-label="Main Navigation">
+      <a href="index.html" class="logo" aria-label="Newby Stack Home">NEWBY<span>STACK</span></a>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="experience.html" class="active" aria-current="page">Experience</a></li>
         <li><a href="blog.html">Insights & Blog</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero container">
-    <h1>Enterprise Systems & <span>Portfolio</span></h1>
-    <p>Over 20 years driving enterprise tooling strategy, M&A systems harmonization, data flow mapping, and custom workflow automation across Healthcare, Higher Education, and SaaS environments[cite: 1, 9].</p>
-  </section>
+  <main id="main-content" role="main">
 
-  <section class="competencies container">
-    <h2>Professional Experience</h2>
-    
-    <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 25px;">
+    <section class="hero container" aria-labelledby="exp-heading">
+      <h1 id="exp-heading">Enterprise Systems & <span>Portfolio</span></h1>
+      <p>Over 20 years driving enterprise tooling strategy, M&A systems harmonization, data flow mapping, and custom workflow automation across Healthcare, Higher Education, and SaaS environments[cite: 1, 9].</p>
+    </section>
 
-      <!-- UT Health San Antonio -->
-      <div class="card">
-        <div class="card-header">
-          <h4>Senior Business Systems Analyst</h4>
-          <span class="company-tag">UT Health San Antonio | April 2025 – Present</span>
-        </div>
-        <div class="tech-subtext">Oracle HCM Cloud, PeopleSoft, Power Query ETL, DAX, VBA Macros, SQL</div>
-        <ul>
-          <li>Primary systems owner leading end-to-end planning, solution design, and implementation across Oracle HCM Cloud and PeopleSoft platforms[cite: 1].</li>
-          <li>Engineered automated reporting workflows and data models using Power Query and DAX to consolidate HR and financial datasets into decision-ready BI dashboards[cite: 1].</li>
-          <li>Developed customized VBA macro tooling to automate routine validation tasks, drastically cutting manual processing overhead[cite: 1].</li>
-          <li>Partnered across Registrar, Financial Aid, and Bursar divisions to map business processes and execute fit-gap analyses[cite: 1].</li>
-        </ul>
+    <section class="container" aria-labelledby="roles-heading">
+      <h2 id="roles-heading" class="section-title">Professional Experience</h2>
+
+      <div style="display: flex; flex-direction: column; gap: 24px; margin-bottom: 60px;">
+
+        <!-- UT Health San Antonio -->
+        <article class="card">
+          <div class="card-header">
+            <h3>Senior Business Systems Analyst</h3>
+            <span class="company-tag">UT Health San Antonio | April 2025 – Present</span>
+          </div>
+          <div class="tech-subtext">Oracle HCM Cloud, PeopleSoft, Power Query ETL, DAX, VBA Macros, SQL</div>
+          <ul>
+            <li>Primary systems owner leading end-to-end planning, solution design, and technical implementation across Oracle HCM Cloud and PeopleSoft platforms[cite: 1].</li>
+            <li>Engineered automated reporting workflows and data models using Power Query and DAX to consolidate HR and financial datasets into decision-ready BI dashboards[cite: 1].</li>
+            <li>Developed customized VBA macro tooling to automate routine validation tasks, drastically cutting manual processing overhead[cite: 1].</li>
+            <li>Partnered across Registrar, Financial Aid, and Bursar divisions to map business processes and execute fit-gap analyses[cite: 1].</li>
+          </ul>
+        </article>
+
+        <!-- Elara Caring -->
+        <article class="card">
+          <div class="card-header">
+            <h3>Technical Consultant – Senior Solutions Engineer</h3>
+            <span class="company-tag">Elara Caring | June 2023 – June 2025</span>
+          </div>
+          <div class="tech-subtext">M&A Systems Harmonization, Data Flow Mapping, Power Query, DAX, Security Schema Analysis</div>
+          <ul>
+            <li>Led system integration, data pipeline mapping, and software alignment across disparate enterprise stacks during major M&A initiatives[cite: 1].</li>
+            <li>Cleaned and merged legacy datasets during post-merger systems harmonization to establish single-source-of-truth accuracy[cite: 1].</li>
+            <li>Created standardized executive DAX metrics to monitor real-time post-conversion integration status[cite: 1].</li>
+            <li>Facilitated technical working sessions with executive leadership to enforce governance standards and preserve institutional knowledge[cite: 1, 3].</li>
+          </ul>
+        </article>
+
+        <!-- Strategic Education, Inc. -->
+        <article class="card">
+          <div class="card-header">
+            <h3>Senior Business Analyst</h3>
+            <span class="company-tag">Strategic Education, Inc. | July 2022 – Dec 2023</span>
+          </div>
+          <div class="tech-subtext">Jira Cloud, Salesforce CRM, Power Query Pipelines, SLA Tracking, Change Advisory Boards</div>
+          <ul>
+            <li>Managed intake, triage, and prioritization for enterprise application enhancement requests using Jira and Salesforce[cite: 1].</li>
+            <li>Built dynamic Power Query ETL pipelines to consolidate enhancement data across CRM and ticketing tools for operational auditing[cite: 1].</li>
+            <li>Authored complex DAX measures to track intake triage velocity, SLA compliance metrics, and backlog performance[cite: 1].</li>
+            <li>Represented functional units in Enterprise Change Advisory Boards (CAB) to validate solution design and assess program dependencies[cite: 1].</li>
+          </ul>
+        </article>
+
+        <!-- University of Pennsylvania -->
+        <article class="card">
+          <div class="card-header">
+            <h3>Technical Consultant – Program Delivery Analyst</h3>
+            <span class="company-tag">University of Pennsylvania | May 2021 – June 2023</span>
+          </div>
+          <div class="tech-subtext">Smartsheet Automation, Jira, Confluence, UAT & Regression Testing, SDLC Execution</div>
+          <ul>
+            <li>Supported a multi-year enterprise student systems rollout, managing requirements across complex, multi-system environments[cite: 1].</li>
+            <li>Built automated reporting workflows and interactive dashboards using Smartsheet to track PMO program delivery[cite: 1, 7].</li>
+            <li>Authored end-to-end testing strategies, regression test suites, UAT plans, and design specifications to drive seamless system adoption[cite: 1, 3].</li>
+          </ul>
+        </article>
+
+        <!-- UT Health Houston -->
+        <article class="card">
+          <div class="card-header">
+            <h3>Enterprise ERP Business Analyst</h3>
+            <span class="company-tag">UT Health Houston | Nov 2013 – May 2021</span>
+          </div>
+          <div class="tech-subtext">SQL Developer, TOAD for Oracle, Agile SDLC, Fit-Gap Analysis, Regulatory Compliance</div>
+          <ul>
+            <li>Utilized SQL Developer and TOAD for Oracle extensively across production environments to build complex queries, analyze data flows, and clean backend data[cite: 1].</li>
+            <li>Conducted fit-gap analyses, user acceptance testing, and process mapping within an Agile SDLC framework prior to release deployments[cite: 1].</li>
+            <li>Architected local, state, and federal reporting processes to ensure strict compliance with government standards[cite: 9].</li>
+          </ul>
+        </article>
+
       </div>
+    </section>
 
-      <!-- Elara Caring -->
-      <div class="card">
-        <div class="card-header">
-          <h4>Technical Consultant – Senior Solutions Engineer</h4>
-          <span class="company-tag">Elara Caring | June 2023 – June 2025</span>
-        </div>
-        <div class="tech-subtext">M&A Systems Harmonization, Data Flow Mapping, Power Query, DAX, Security Schema Analysis</div>
-        <ul>
-          <li>Led system integration, data pipeline mapping, and software alignment across disparate enterprise stacks during major M&A initiatives[cite: 1].</li>
-          <li>Cleaned and merged legacy datasets during post-merger systems harmonization to establish single-source-of-truth accuracy[cite: 1].</li>
-          <li>Created standardized executive DAX metrics to monitor real-time post-conversion integration status[cite: 1].</li>
-          <li>Facilitated technical working sessions with executive leadership to enforce governance standards and preserve institutional knowledge[cite: 1, 3].</li>
-        </ul>
+    <!-- Technical Stack Section -->
+    <section class="container" aria-labelledby="tech-heading">
+      <h2 id="tech-heading" class="section-title">Technical Stack & Proficiencies</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Analytics & SQL</h3>
+          <p>Advanced SQL, TOAD for Oracle, SQL Developer, Power Query ETL, DAX, Power BI Pro, Data Schema Analysis[cite: 1, 3, 6].</p>
+        </article>
+        <article class="card">
+          <h3>Platforms & CRM</h3>
+          <p>Oracle HCM Cloud, PeopleSoft, Workday, Salesforce, Ellucian Banner, TouchNet, CashNet[cite: 1, 9].</p>
+        </article>
+        <article class="card">
+          <h3>Automation & Tools</h3>
+          <p>Microsoft Power Automate, Jira Cloud, Confluence, Smartsheet, ServiceNow, Google Gemini AI, Copilot[cite: 1, 3, 9].</p>
+        </article>
       </div>
+    </section>
 
-      <!-- SEI -->
-      <div class="card">
-        <div class="card-header">
-          <h4>Senior Business Analyst</h4>
-          <span class="company-tag">Strategic Education, Inc. | July 2022 – Dec 2023</span>
-        </div>
-        <div class="tech-subtext">Jira Cloud, Salesforce CRM, Power Query Pipelines, SLA Tracking, Change Advisory Boards</div>
-        <ul>
-          <li>Managed intake, triage, and prioritization for enterprise application enhancement requests using Jira and Salesforce[cite: 1].</li>
-          <li>Built dynamic Power Query ETL pipelines to consolidate enhancement data across CRM and ticketing tools for operational auditing[cite: 1].</li>
-          <li>Authored complex DAX measures to track intake triage velocity, SLA compliance metrics, and backlog performance[cite: 1].</li>
-          <li>Represented functional units in Enterprise Change Advisory Boards (CAB) to validate solution design and assess program dependencies[cite: 1].</li>
-        </ul>
-      </div>
+  </main>
 
-      <!-- UPenn -->
-      <div class="card">
-        <div class="card-header">
-          <h4>Technical Consultant – Program Delivery Analyst</h4>
-          <span class="company-tag">University of Pennsylvania | May 2021 – June 2023</span>
-        </div>
-        <div class="tech-subtext">Smartsheet Automation, Jira, Confluence, UAT & Regression Testing, SDLC Execution</div>
-        <ul>
-          <li>Supported a multi-year enterprise student systems rollout, managing requirements across complex, multi-system environments[cite: 1].</li>
-          <li>Built automated reporting workflows and interactive dashboards using Smartsheet to track PMO program delivery[cite: 1, 7].</li>
-          <li>Authored end-to-end testing strategies, regression test suites, UAT plans, and design specifications to drive seamless system adoption[cite: 1, 3].</li>
-        </ul>
-      </div>
-
-      <!-- UT Health Houston -->
-      <div class="card">
-        <div class="card-header">
-          <h4>Enterprise ERP Business Analyst</h4>
-          <span class="company-tag">UT Health Houston | Nov 2013 – May 2021</span>
-        </div>
-        <div class="tech-subtext">SQL Developer, TOAD for Oracle, Agile SDLC, Fit-Gap Analysis, Regulatory Compliance</div>
-        <ul>
-          <li>Utilized SQL Developer and TOAD for Oracle extensively across production environments to build complex queries, analyze data flows, and clean backend data[cite: 1].</li>
-          <li>Conducted fit-gap analyses, user acceptance testing, and process mapping within an Agile SDLC framework prior to release deployments[cite: 1].</li>
-          <li>Architected local, state, and federal reporting processes to ensure strict compliance with government standards[cite: 9].</li>
-        </ul>
-      </div>
-
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Newby Stack. All rights reserved. Built with accessibility and performance standards.</p>
     </div>
-  </section>
+  </footer>
 
-  <section class="competencies container" style="padding-top: 0;">
-    <h2>Technical Stack & Proficiencies</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Analytics & SQL</h3>
-        <p>Advanced SQL, TOAD for Oracle, SQL Developer, Power Query ETL, DAX, Power BI Pro, Data Schema Analysis[cite: 1, 3, 6].</p>
-      </div>
-      <div class="card">
-        <h3>Platforms & CRM</h3>
-        <p>Oracle HCM Cloud, PeopleSoft, Workday, Salesforce, Ellucian Banner, TouchNet, CashNet[cite: 1, 9].</p>
-      </div>
-      <div class="card">
-        <h3>Automation & Tools</h3>
-        <p>Microsoft Power Automate, Jira Cloud, Confluence, Smartsheet, ServiceNow, Google Gemini AI, Copilot[cite: 1, 3, 9].</p>
-      </div>
-    </div>
-  </section>
 </body>
 </html>
