@@ -79,17 +79,64 @@ nav {
   align-items: center;
 }
 
+/* ==========================================
+   HYBRID GRAPHIC + TYPOGRAPHY LOGO STYLES
+   ========================================== */
+
 .logo-link {
   display: flex;
   align-items: center;
+  gap: 14px;
   text-decoration: none;
   border-bottom: none !important;
+  padding: 2px 0;
 }
 
-.site-logo {
-  height: 48px;
+.site-logo-icon {
+  height: 42px;
   width: auto;
   display: block;
+  object-fit: contain;
+  mix-blend-mode: screen; 
+  filter: drop-shadow(0 2px 8px rgba(72, 202, 228, 0.3));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+.brand-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: 1.5px;
+}
+
+.brand-title span {
+  color: var(--accent-cyan);
+}
+
+.brand-sub {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #8E9AAF;
+  letter-spacing: 1.8px;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+/* Interactive Hover & Focus Effects */
+.logo-link:hover .site-logo-icon {
+  filter: drop-shadow(0 2px 12px rgba(72, 202, 228, 0.6));
+  transform: scale(1.03);
+}
+
+.logo-link:hover .brand-title {
+  color: var(--accent-cyan);
 }
 
 .logo-link:focus {
@@ -255,7 +302,13 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .site-logo {
-    height: 36px;
+  .site-logo-icon {
+    height: 34px;
+  }
+  .brand-title {
+    font-size: 1.1rem;
+  }
+  .brand-sub {
+    font-size: 0.55rem;
   }
 }
