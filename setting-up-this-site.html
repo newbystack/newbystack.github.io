@@ -33,39 +33,65 @@
     <!-- Hero Banner Matching Main Site Theme -->
     <section class="hero container" aria-labelledby="article-heading">
       <h1 id="article-heading">Setting Up <span>This Site</span></h1>
-      <p>An overview of static architecture, custom domain DNS mapping, and automated HTTPS enforcement.</p>
+      <p>A Step-by-Step Guide to Building NewbyStack.com</p>
     </section>
 
     <!-- Main Article Body -->
     <section class="container" aria-label="Article Details" style="margin-bottom: 60px;">
       <article class="card">
         <div class="card-header">
-          <h2 style="font-size: 1.25rem; margin: 0;">Technical Deployment & Architecture</h2>
+          <h2 style="font-size: 1.25rem; margin: 0;">Step-by-Step Deployment Process</h2>
           <span class="company-tag">Web Architecture & Hosting</span>
         </div>
-        <div class="tech-subtext" style="margin-bottom: 20px;">Published 2026 • 3 min read</div>
+        <div class="tech-subtext" style="margin-bottom: 20px;">Published 2026 • 4 min read</div>
 
-        <div class="post-content" style="line-height: 1.6;">
+        <div class="post-content" style="line-height: 1.65;">
           <p>
-            Welcome to the first post on Newby Stack! This article outlines the underlying static infrastructure behind this site while serving as a reusable HTML template for future technical documentation.
+            Welcome to the first post on Newby Stack! This article documents the step-by-step process I followed to build and deploy this site - from using Google Gemini to assist with initial planning and code generation, to hands-on editing of the HTML and CSS to my preferred specifications in Notepad++, serving as a procedural guide for setting up a custom, accessible static website on GitHub Pages.
           </p>
 
-          <h3 style="margin-top: 24px; margin-bottom: 10px; font-size: 1.1rem;">Infrastructure & Hosting</h3>
-          <p>
-            The site is built with semantic HTML5 and custom CSS, hosted directly via GitHub Pages on <code>newbystack.com</code>, and secured with automated TLS/SSL certificate issuance via Let's Encrypt.
+          <h3 style="margin-top: 24px; margin-bottom: 10px; font-size: 1.15rem;">Step 1: Brand Positioning & Naming Strategy</h3>
+          <ol style="margin-left: 20px; margin-bottom: 16px;">
+            <li style="margin-bottom: 8px;">Prompted Google Gemini for domain ideas incorporating my surname, Newby. Selected <code>newbystack.com</code>, which is a nod to my technology stack (Oracle, PeopleSoft, Power BI, Jira, SQL, SharePoint, etc.).</li>
+            <li style="margin-bottom: 8px;">Uploaded a skills matrix and nine resume iterations over the last 3 years to determine site content and structuring.</li>
+            <li style="margin-bottom: 8px;">Generated positioning statements to validate the tone and created the initial "N" and "S" logo mark.</li>
+			<li style="margin-bottom: 8px;">Refined the core branding concept from "Enterprise Architecture" to Holistic Workflow Architecture to better describe my focus on bridging comprehensive functional and technical enterprise solutions.</li>
+          </ol>
+
+          <h3 style="margin-top: 24px; margin-bottom: 10px; font-size: 1.15rem;">Step 2: Scaffolding & Front-End Setup</h3>
+          <ol style="margin-left: 20px; margin-bottom: 16px;">
+            <li style="margin-bottom: 8px;">Purchased <code>newbystack.com</code> on GoDaddy and requested step-by-step instructions to build local HTML and CSS files.</li>
+            <li style="margin-bottom: 8px;">Opted for GitHub Pages over traditional paid hosting to maintain a zero-cost, high-performance static architecture.</li>
+            <li style="margin-bottom: 8px;">Created local site files and edited them in Notepad++, using "Preview HTML" to test layout changes prior to deployment.</li>
+          </ol>
+
+          <h3 style="margin-top: 24px; margin-bottom: 10px; font-size: 1.15rem;">Step 3: Visual Polish & Accessibility Optimization</h3>
+          <ol style="margin-left: 20px; margin-bottom: 16px;">
+            <li style="margin-bottom: 8px;">Redesigned the site styling and color palette around the logo's dark navy and blue visual scheme.</li>
+            <li style="margin-bottom: 8px;">Implemented full ADA / WCAG accessibility standards across all page elements.</li>
+            <li style="margin-bottom: 8px;">Replaced the default header image with a Hybrid Logo + HTML Typography layout for clean, responsive scaling.</li>
+            <li style="margin-bottom: 8px;">Updated the experience page to ensure all historical roles and software platforms were fully represented.</li>
+          </ol>
+
+          <h3 style="margin-top: 24px; margin-bottom: 10px; font-size: 1.15rem;">Step 4: Repository Setup & Deployment</h3>
+          <ol style="margin-left: 20px; margin-bottom: 16px;">
+            <li style="margin-bottom: 8px;">Created a GitHub account and a new public repository.</li>
+            <li style="margin-bottom: 8px;">Uploaded local HTML and CSS assets directly to the repository and enabled GitHub Pages in site settings.</li>
+          </ol>
+
+          <h3 style="margin-top: 24px; margin-bottom: 10px; font-size: 1.15rem;">Step 5: Custom Domain & DNS Troubleshooting</h3>
+          <ol style="margin-left: 20px; margin-bottom: 16px;">
+            <li style="margin-bottom: 8px;">Mapped the custom domain in GitHub Pages settings.</li>
+            <li style="margin-bottom: 8px;">Encountered the <em>"Enforce HTTPS - Unavailable for your site because your domain is not properly configured to support HTTPS"</em> error.</li>
+            <li style="margin-bottom: 8px;">Inspected GoDaddy DNS settings and identified a conflicting 5th "Parked" A record alongside GitHub's four IP addresses.</li>
+            <li style="margin-bottom: 8px;">Deleted the parked record, allowing Let's Encrypt to verify domain ownership and successfully issue the SSL certificate.</li>
+          </ol>
+
+          <h3 style="margin-top: 24px; margin-bottom: 10px; font-size: 1.15rem;">Step 6:  Et voilà—the site is now deployed and secure at <strong>https://newbystack.com</strong>!</h3>
+           
           </p>
 
-          <h3 style="margin-top: 24px; margin-bottom: 10px; font-size: 1.1rem;">Core Execution Steps</h3>
-          <ul style="margin-left: 20px; margin-bottom: 20px;">
-            <li>Configuring root apex domain <code>A</code> records pointing to GitHub's server IPs.</li>
-            <li>Enforcing strict HTTPS encryption across all site traffic and subdomains.</li>
-            <li>Maintaining full WCAG/ADA accessibility compliance across all components.</li>
-          </ul>
-
-          <blockquote style="border-left: 4px solid var(--accent-color, #0056b3); padding-left: 16px; margin: 24px 0; font-style: italic;">
-            "Building simple, accessible, and well-structured technology foundations scales far better than over-complicating early infrastructure."
-          </blockquote>
-        </div>
+              
 
         <footer style="margin-top: 30px; padding-top: 16px; border-top: 1px solid #e0e0e0;">
           <a href="blog.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">
