@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setting Up This Site | Newby Stack</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Screen Reader Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <nav class="container" aria-label="Main Navigation">
+      <a href="index.html" class="logo-link" aria-label="Newby Stack Home">
+        <img src="logo.png" alt="Newby Stack Icon" class="site-logo-icon">
+        <div class="brand-text">
+          <span class="brand-title">NEWBY<span>STACK</span></span>
+          <span class="brand-sub">SYSTEMS ARCHITECTURE</span>
+        </div>
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="blog.html" class="active" aria-current="page">Insights & Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <!-- Hero Banner Matching Main Site Theme -->
+    <section class="hero container" aria-labelledby="article-heading">
+      <h1 id="article-heading">Setting Up <span>This Site</span></h1>
+      <p>An overview of static architecture, custom domain DNS mapping, and automated HTTPS enforcement.</p>
+    </section>
+
+    <!-- Main Article Body -->
+    <section class="container" aria-label="Article Details" style="margin-bottom: 60px;">
+      <article class="card">
+        <div class="card-header">
+          <h2 style="font-size: 1.25rem; margin: 0;">Technical Deployment & Architecture</h2>
+          <span class="company-tag">Web Architecture & Hosting</span>
+        </div>
+        <div class="tech-subtext" style="margin-bottom: 20px;">Published August 2026 • 3 min read</div>
+
+        <div class="post-content" style="line-height: 1.6;">
+          <p>
+            Welcome to the first post on Newby Stack! This article outlines the underlying static infrastructure behind this site while serving as a reusable HTML template for future technical documentation.
+          </p>
+
+          <h3 style="margin-top: 24px; margin-bottom: 10px; font-size: 1.1rem;">Infrastructure & Hosting</h3>
+          <p>
+            The site is built with semantic HTML5 and custom CSS, hosted directly via GitHub Pages on <code>newbystack.com</code>, and secured with automated TLS/SSL certificate issuance via Let's Encrypt.
+          </p>
+
+          <h3 style="margin-top: 24px; margin-bottom: 10px; font-size: 1.1rem;">Core Execution Steps</h3>
+          <ul style="margin-left: 20px; margin-bottom: 20px;">
+            <li>Configuring root apex domain <code>A</code> records pointing to GitHub's server IPs.</li>
+            <li>Enforcing strict HTTPS encryption across all site traffic and subdomains.</li>
+            <li>Maintaining full WCAG/ADA accessibility compliance across all components.</li>
+          </ul>
+
+          <blockquote style="border-left: 4px solid var(--accent-color, #0056b3); padding-left: 16px; margin: 24px 0; font-style: italic;">
+            "Building simple, accessible, and well-structured technology foundations scales far better than over-complicating early infrastructure."
+          </blockquote>
+        </div>
+
+        <footer style="margin-top: 30px; padding-top: 16px; border-top: 1px solid #e0e0e0;">
+          <a href="blog.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">
+            &larr; Back to All Articles
+          </a>
+        </footer>
+      </article>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Newby Stack. All rights reserved. Built with accessibility and performance standards.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
